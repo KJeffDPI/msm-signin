@@ -4,10 +4,14 @@
 #
 #  id          :integer          not null, primary key
 #  description :text
+#  duration    :integer
+#  image       :string
 #  title       :string
+#  year        :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  direct_id   :integer
+#  director_id :integer
 #
 class Movie < ApplicationRecord
   belongs_to :director
